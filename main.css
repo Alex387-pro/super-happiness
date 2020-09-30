@@ -1,0 +1,198 @@
+/*------------------------------------*\
+    TEMPLATES GLOBAL
+\*------------------------------------*/
+
+a {
+    color: #a06cd5;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #bf85fa;
+}
+
+div[data-editable="text"] ul,
+div[data-editable="text"] ol {
+    padding-left: 34px;
+}
+
+div[data-editable="text"] ol li,
+div[data-editable="text"] ul li {
+    margin: 6px 0;
+}
+
+/* [ Button container ] */
+div[data-editable="button"],
+div[data-editable="webinarButton"],
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+    border-radius: 0;
+    background-color: #a06cd5;
+    color: #ffffff;
+}
+
+/* [ Button text ] */
+div[data-editable="button"] button,
+div[data-editable="webinarButton"] button,
+div[data-editable="webform"] button,
+div[data-editable="webformNewButton"] button {
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* [ Button :hover ] */
+div[data-editable="button"].hover,
+div[data-editable="webinarButton"].hover,
+div[data-editable="webform"] div[data-type="submit"].hover button,
+[data-editable="webformNewButton"].hover button {
+    background-color: #bf85fa;
+
+}
+
+div[data-editable="button"].hover button,
+div[data-editable="webinarButton"].hover button,
+div[data-editable="webform"] div[data-type="submit"].hover button,
+[data-editable="webformNewButton"].hover button {
+    color: #ffffff;
+}
+
+/* [ Base text ] */
+div.text-content,
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webformNew"] .directional,
+div[data-editable="webinarNew"] label,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select,
+div[data-editable="webinarNew"] .directional {
+    font-size: 16px;
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    color: #000000;
+    line-height: 1.3;
+}
+
+/* [ Webform text ] */
+div[data-editable="webform"] label,
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webformNew"] .directional,
+div[data-editable="webinarNew"] label,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select,
+div[data-editable="webinarNew"] .directional{
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* [ Webform text ] */
+div[data-editable="webform"] label,
+div[data-editable="webformNew"] label,
+div[data-editable="webinarNew"] label {
+    font-size: 14px;
+}
+
+/* Style placeholder */
+div[data-editable="webform"] label,
+div[data-editable="webformNew"] label,
+div[data-editable="webformNew"] select,
+div[data-editable="webformNew"] .directional,
+div[data-editable="webinarNew"] .directional {
+    color: #818181;
+}
+
+[data-editable="webformNew"] [data-editable-item="label"] label,
+[data-editable="webinarNew"] [data-editable-item="label"] label {
+    padding: 15px 15px 15px 0;
+}
+
+div[data-editable="orderForm"] [data-editable="orderFormItem"] .input-style {
+    padding: 11px 10px 0 10px;
+}
+
+/* [ Webform inputs ] */
+div[data-editable="webform"] input[type="text"],
+div[data-editable="webform"] textarea,
+div[data-editable="webform"] select,
+div[data-editable="webformNew"] input[type="text"],
+div[data-editable="webformNew"] [data-item-what="phone"] .fix-table-bug,
+div[data-editable="webformNew"] textarea,
+div[data-editable="webformNew"] select,
+div[data-editable="webinarNew"] input[type="text"],
+div[data-editable="webinarNew"] [data-item-what="phone"] .fix-table-bug,
+div[data-editable="webinarNew"] textarea,
+div[data-editable="webinarNew"] select,
+div[data-editable="orderForm"] [data-editable="orderFormItem"] .input-style-container {
+    border-radius: 0;
+    border: 0;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+div[data-editable="webformNew"] [data-item-what="phone"] input[type="text"],
+div[data-editable="webinarNew"] [data-item-what="phone"] input[type="text"] {
+    border: none;
+}
+
+div[data-editable="webformNew"] .directional::after {
+    border-color: #fe2323 transparent transparent transparent;
+}
+
+[data-editable="webformNewItem"].opened .directional::after {
+    border-color: transparent transparent #fe2323 transparent;
+}
+
+.custom-form [data-editable="webformNewItem"],
+.custom-form [data-editable="webformNewButton"],
+.custom-form [data-editable="webformNewItem"] [data-editable-item="label"],
+.custom-form [data-editable="webformNewItem"] [data-editable-item="field"] {
+    height: 50px;
+}
+
+.custom-form [data-editable="webformNewItem"][data-item-name="multi_checkbox"],
+.custom-form [data-editable="webformNewItem"][data-item-name="multi_checkbox"] {
+    height: auto;
+}
+
+.custom-form [data-editable="webformNewItem"] {
+    width: 300px;
+}
+
+/* PRODUCT LIST */
+[data-editable="productList"] .product-list-content {
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    padding-right: 2px;
+}
+
+[data-editable="productList"] .no-products {
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+}
+
+div[data-editable="productList"] .product-list-content-cell,
+div[data-editable="productList"] .product-list-content-cell label {
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+div[data-editable="productList"] .product-list-content-cell:nth-child(2) {
+    padding-top: 2px;
+    text-align: right;
+}
